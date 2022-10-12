@@ -1,0 +1,23 @@
+{
+  "name": "books-api",
+  "private": true,
+  "description": "Testing different query client for graphql",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon --ext js,graphql --ignore data/ server.js",
+    "schema": "apollo schema:download --endpoint=http://localhost:9000/graphql schema.json"
+  },
+  "dependencies": {
+    "apollo-server-express": "^3.10.2",
+    "express": "^4.18.1",
+    "fakebase": "^0.3.0",
+    "graphql": "^16.6.0"
+  },
+  "devDependencies": {
+    "apollo": "^2.34.0",
+    "nodemon": "^2.0.15"
+  },
+  "resolutions": {
+    "graphql": "16.6.0"
+  }
+}

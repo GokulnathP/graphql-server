@@ -1,0 +1,16 @@
+type Query {
+    greeting: String
+    books: [Book!]!
+}
+
+type Book {
+    id: ID!
+    title: String
+    author: String
+    imageLink: String
+    year: Int
+    language: String
+    link: String
+    pages: Int
+    country: String
+}
